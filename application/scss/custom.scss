@@ -1,0 +1,79 @@
+$primary:#ec3a46;
+$secondary:#9f4246;
+$third:#6c757d;
+$success:#198754;
+$danger:#dc3545;
+$info:#0dcaf0;
+$warning:#ffc107;
+$light:#f8f9fa;
+$dark:#212529;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Sarabun", sans-serif;
+}
+
+.bg-floraprincess {
+    background-color: #FCFBF0;
+}
+
+.bg-floraprincess-decor {
+    background-image: url(/application/images/decor.png);
+    background-color: #FCFBF0;
+}
+
+.bg-image {
+    background-color: #ffffff;
+    background-image: url("/application/images/banners/banner_2022.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.fs-7 {
+	font-size: 0.9rem;;
+}
+
+.fs-8 {
+	font-size: 0.85rem;;
+}
+
+.fs-9 {
+	font-size: 0.8rem;;
+}
+
+
+.text-title {
+    font-family: "Sriracha", sans-serif;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.bg-primary {
+ 	background-color: $primary !important;
+}
+
+.btn-primary {
+ 	background-color: $primary !important;
+ 	border-color: $primary !important;
+}
+
+
+.text-fb {
+    color: #1b74e4;
+}
+.text-line-app {
+    color: #07b53b;
+}
+
+

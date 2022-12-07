@@ -1,0 +1,243 @@
+/*
+.rn-header {
+	background-color: #ffffff;
+    padding: 0px 20px;
+}
+*/
+.rn-header {
+    padding: 0px 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.rn-header_set {
+    @include wrapper;
+}
+
+.rn-header .rn-header-flx {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .at-hlogo {
+    	padding: 10px 20px 10px 0px;
+ 
+        a.floraprincess {
+            display: block;
+            max-width: 300px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .rn-header-mbnav {
+        display: none;
+        padding: 0px;
+
+        label {
+        	position: relative;
+        	display: block;
+        	overflow: hidden;
+
+        	input[type="checkbox"] {
+        		position: absolute;
+        		top: -100px;
+			}
+
+			i {
+				font-size: 1.8em;
+				color: #513438;
+				cursor: pointer;
+			}
+
+        }
+
+        button {
+            width: 32px;
+            height: 32px;
+            border: 0px;
+            background-color: transparent;
+            background-image: url('/b2b/responsive/images/hamburger-wh.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+    }
+
+
+    .at-hnav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+
+        .at-hnav-lnk ul {
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
+            height: 100%;
+            list-style: none;
+            display: flex;
+
+            li {
+            	a {
+		        	padding: 0px 10px;
+		        	height: 100%;
+		        	display: flex;
+		        	align-items: center;
+		        	cursor: pointer;
+		        	transition: all 0.3s;
+                    text-decoration: none;
+                    font-family: $font-title;
+		        	color: $primary-color;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    text-shadow: rgba(255,255,255,0.5) 1px 1px 0px;
+
+                    &:hover {
+                        background-color: rgba(255,255,255,0.1);
+                    }
+
+                    i{
+                        padding: 0px 8px;
+                    }
+
+            	}
+            }
+        }
+    }
+}
+
+.at-hnav-opt {
+    display: flex;
+}
+
+.at-hnav-language div {
+    position: relative;
+    padding: 0px 10px 0px 32px;
+}
+
+.at-hnav-currency div {
+    padding: 0px 10px 0px 10px;
+    background-image: url('/b2b/responsive/images/menu-dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 15px bottom 6px;
+}
+
+.at-hnav-language div button,
+.at-hnav-currency div button {
+    margin: 0px;
+    padding: 26px 0px 0px 0px;
+    border: 0px;
+    background-color: transparent;
+    font-family: $font-normal;
+    font-size: 0.82em;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.at-hnav-language div button i {
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    display: block;
+}
+
+.at-hnav-currency div button {
+    padding-right: 30px;
+}
+
+.at-hnav-submenu {
+    position: relative;
+
+    span {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        padding: 27px 0px 0px 0px;
+        z-index: 99;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            background-color: #ffffff;
+            border-top: 3px solid $secondary-color;
+            width: 180px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+
+            li {
+                a {
+                    display: flex;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(100, 100, 100, 0.1);
+                    }
+
+                    i {
+                        padding: 6px 0px 6px 12px;
+                    }
+
+                    em {
+                        padding: 8px 12px;
+                        font-style: normal;
+                        font-size: 0.9em;
+                        color: #595959;
+                    }
+                }
+
+                +li a {
+                    border-top: 1px dotted #d7d7d7;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 988px) {
+
+
+
+	.rn-header .rn-header-flx {
+	    .at-hnav {
+	        .at-hnav-lnk ul {
+	            li {
+	            	a {
+			        	padding: 0px 10px;
+	            	}
+	            }
+	        }
+	    }
+	}
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .rn-header .rn-header-flx {
+        justify-content: space-between;
+
+        .at-hnav {
+            display: none;
+        }
+        .rn-header-mbnav{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}

@@ -1,0 +1,121 @@
+<?php 
+$path_update = '/application/images/products/2022/';
+$flower_gellery = array(
+	array(
+		"title" => "ช่อดอกไม้", //Bouquet
+		"link" => "bouquet", 
+		"list" => array(
+            array('image' => 'bouquet/348095.jpg',),
+            array('image' => 'bouquet/348096.jpg',),
+            array('image' => 'bouquet/348097.jpg',),
+            array('image' => 'bouquet/348098.jpg',),
+            //array('image' => 'bouquet/348099.jpg',),
+            array('image' => 'bouquet/347900.jpg',),
+            array('image' => 'bouquet/258763.jpg',),
+            array('image' => 'bouquet/262960.jpg',),
+            array('image' => 'bouquet/262954.jpg',),
+            array('image' => 'bouquet/262957.jpg',),
+            array('image' => 'bouquet/260356.jpg',),
+		),
+	),
+	array(
+		"title" => "กระเช้าดอกไม้", //Flower Box
+		"link" => "flower-basket", 
+		"list" => array(
+			array('image'=>'flower-basket/357455.jpg',),
+			array('image'=>'flower-basket/360283.jpg',),
+			array('image'=>'flower-basket/357306.jpg',),
+			array('image'=>'flower-basket/357307.jpg',),
+			array('image'=>'flower-basket/360286.jpg',),
+			array('image'=>'flower-basket/360287.jpg',),
+			array('image'=>'flower-basket/360288.jpg',),
+		),
+	),
+	array(
+		"title" => "กล่องดอกไม้", //Flower Box
+		"link" => "flower-box", 
+		"list" => array(
+			array('image'=>'flower-box/356909.jpg',),
+			array('image'=>'flower-box/357314.jpg',),
+			array('image'=>'flower-box/357315.jpg',),
+			array('image'=>'flower-box/357534.jpg',),
+			array('image'=>'flower-box/357535.jpg',),
+			array('image'=>'flower-box/357854.jpg',),
+			array('image'=>'flower-box/360542.jpg',),
+			array('image'=>'flower-box/360543.jpg',),
+			array('image'=>'flower-box/360544.jpg',),
+			array('image'=>'flower-box/360545.jpg',),
+			array('image'=>'flower-box/360546.jpg',),
+			array('image'=>'flower-box/360547.jpg',),
+			array('image'=>'flower-box/360548.jpg',),
+			array('image'=>'flower-box/360549.jpg',),
+			array('image'=>'flower-box/360550.jpg',),
+			array('image'=>'flower-box/360551.jpg',),
+			array('image'=>'flower-box/360552.jpg',),
+			array('image'=>'flower-box/360554.jpg',),
+			array('image'=>'flower-box/360555.jpg',),
+			array('image'=>'flower-box/360556.jpg',),
+			array('image'=>'flower-box/360557.jpg',),
+			array('image'=>'flower-box/360559.jpg',),
+			array('image'=>'flower-box/360565.jpg',),
+			array('image'=>'flower-box/360566.jpg',),
+			array('image'=>'flower-box/360567.jpg',),
+			array('image'=>'flower-box/360568.jpg',),
+			array('image'=>'flower-box/360569.jpg',),
+			array('image'=>'flower-box/360570.jpg',),
+			array('image'=>'flower-box/360571.jpg',),
+		),
+	),
+	array(
+		"title" => "Decoration", 
+		"link" => "decoration", 
+		"list" => array(
+			array('image'=>'decoration/357328.jpg',),
+			array('image'=>'decoration/360573.jpg',),
+			array('image'=>'decoration/360574.jpg',),
+			array('image'=>'decoration/360575.jpg',),
+			array('image'=>'decoration/360576.jpg',),
+			array('image'=>'decoration/360578.jpg',),
+			array('image'=>'decoration/360579.jpg',),
+			array('image'=>'decoration/360580.jpg',),
+			array('image'=>'decoration/360581.jpg',),
+			array('image'=>'decoration/360582.jpg',),
+			array('image'=>'decoration/360583.jpg',),
+			array('image'=>'decoration/360584.jpg',),
+			array('image'=>'decoration/360585.jpg',),
+			array('image'=>'decoration/360586.jpg',),
+		),
+	),
+
+	array(
+		"title" => "Teddy Bear", //Flower Box
+		"link" => "teddy-bear", 
+		"list" => array(
+			array('image'=>'teddy-bear/359999.jpg',),
+			array('image'=>'teddy-bear/360027.jpg',),
+			array('image'=>'teddy-bear/360028.jpg',),
+			array('image'=>'teddy-bear/360030.jpg',),
+			array('image'=>'teddy-bear/360033.jpg',),
+			array('image'=>'teddy-bear/360327.jpg',),
+			array('image'=>'teddy-bear/360590.jpg',),
+			array('image'=>'teddy-bear/360593.jpg',),
+			array('image'=>'teddy-bear/360594.jpg',),
+			array('image'=>'teddy-bear/360595.jpg',),
+			array('image'=>'teddy-bear/360596.jpg',),
+			array('image'=>'teddy-bear/360599.jpg',),
+			array('image'=>'teddy-bear/360603.jpg',),
+		),
+	),        	
+	array(
+		"title" => "กระเช้าผลไม้", //
+		"link" => "fruit-basket", 
+		"list" => array(
+			array('image'=>'fruit-basket/357993.jpg',),
+			array('image'=>'fruit-basket/358128.jpg',),
+			array('image'=>'fruit-basket/360280.jpg',),
+			array('image'=>'fruit-basket/360279.jpg',),
+			array('image'=>'fruit-basket/360278.jpg',),
+		),
+	),
+);
+?>

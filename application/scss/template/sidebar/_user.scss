@@ -1,0 +1,45 @@
+
+.sb-usr {
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    div {
+        &:nth-child(1) {
+            padding: 10px 0px;
+            width: 30px;
+
+            i {
+                font-size: 1.5em;
+            }
+        }
+
+        &:nth-child(2) {
+            padding: 5px 2px;
+            width: calc(100% - 30px);
+
+            label {
+                display: block;
+                margin: 0px;
+                padding: 0px;
+                font-size: 0.8em;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.5);
+                letter-spacing: 0.05em;
+            }
+
+            strong {
+                display: block;
+                margin: 0px;
+                padding: 0px 0px 5px 0px;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 1);
+                letter-spacing: 0.05em;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

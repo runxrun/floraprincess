@@ -1,0 +1,51 @@
+.rn-page-navigation {
+	.nav-flex{
+		display: flex;
+		justify-content: center;
+
+		button {
+			border: 1px solid #d7d7d7;
+			background-color: #ffffff;
+			min-width: 36px;
+			height: 35px;
+			font-size: 13em;
+			font-size: 1.3rem;
+			color: $gray;
+			outline: none;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		button + button{
+			border-left: 0px;
+		}
+		button:disabled {
+			color: $light-color;
+			cursor: default;
+		}
+		button.active {
+			border: 1px solid $primary-color;
+			background-color: $primary-color;
+			color: #ffffff;
+		}
+
+
+		button:first-child{
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		button:last-child{
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+
+	}
+	.nav-txt{
+		padding: 10px 0px 0px 0px;
+		text-align: center;
+		font-size: 13em;
+		font-size: 1.3rem;
+		color: $gray;
+	}
+}

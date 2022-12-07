@@ -1,0 +1,135 @@
+
+.rn-creditlimit {
+    padding: 10px 0px;
+
+    .limit {
+        display: flex;
+
+        span {
+            &.balance {
+                width: calc(100% - 45px);
+                padding: 0px 10px;
+                line-height: 18px;
+
+                em,
+                i,
+                a {
+                    display: block;
+                    font-style: normal;
+                }
+
+                em {
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    font-size: 0.8em;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                i {
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #ffffff;
+                }
+
+                a {
+                    padding: 5px 0px 0px 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    font-size: 0.8em;
+                    color: #22aeff;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &.circle {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: transparent;
+                line-height: 0px;
+
+                em {
+                    text-align: center;
+                    width: 100%;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    .limit-av span.circle {
+        border: 2px solid #35ea27;
+
+        em {
+            color: #35ea27;
+        }
+    }
+
+    .limit-rq span.circle {
+        border: 2px solid #ffa525;
+
+        em {
+            color: #ffa525;
+        }
+    }
+
+    .limit-sr span.circle {
+        border: 2px solid #ff283c;
+
+        em {
+            color: #ff283c;
+        }
+    }
+
+    .limit-ov span.circle {
+        border: 2px solid #888888;
+
+        em {
+            color: #ffffff;
+        }
+    }
+}
+
+.credit-info {
+    display: none;
+
+    ul {
+        margin: 0px;
+        padding: 5px 0px;
+        list-style: none;
+
+        li {
+            padding: 2px 0px;
+            display: flex;
+            align-items: center;
+
+            em,
+            i {
+                letter-spacing: 0.05em;
+                font-style: normal;
+                font-size: 0.9em;
+            }
+
+            em {
+                width: 100%;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            i {
+                width: 100%;
+                text-align: right;
+                color: rgba(255, 255, 255, 1);
+                font-weight: 700;
+            }
+        }
+    }
+}

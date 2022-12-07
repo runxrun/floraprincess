@@ -1,0 +1,151 @@
+.banner-valentines {
+    background-color: #ffffff;
+    background-image: url('/application/images/banners/banner_2022.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    color: #ec3a46;
+}
+
+.valentines-pos {
+    @include wrapper;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            text-align: center;
+
+            strong {
+                display: block;
+                font-family: $font-title;
+                color: $primary-color;
+                font-size: 38px;
+                font-size: 3.8rem;
+                padding: 0px 0px 12px 0px;
+                line-height: 140%;
+            }
+
+            span {
+                display: block;
+                color: $primary-color;
+                font-size: 20px;
+                font-size: 2.0rem;
+                padding: 0px 0px 50px 0px;
+                max-width: 520px;
+                line-height: 140%;
+            }
+
+            a {
+                background-color: $primary-color;
+                color: #ffffff;
+                padding: 16px 20px;
+                border-radius: 5px;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+                text-decoration: none;
+                font-size: 20px;
+                font-size: 2.0rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .banner-valentines {
+        height: 400px;
+    }
+
+    .valentines-pos {
+        background-color: rgba(255,255,255,0.8);
+    }
+
+}
+
+@media screen and (max-width: 628px) {
+
+    .valentines-pos {
+        ul {
+
+            li {
+                text-align: center;
+
+                strong {
+                    font-size: 28px;
+                    font-size: 2.8rem;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                }
+
+                a {
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.rn-newsbar {
+    padding: 0px 20px;
+    background: rgb(245, 245, 245);
+    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(242, 242, 242, 1) 100%);
+}
+
+.newbar-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px 0px;
+    font-size: 13px;
+    font-size: 1.3rem;
+
+    span {
+        &:nth-child(1) {
+            white-space: nowrap;
+
+            i {
+                color: $primary-color;
+            }
+
+            b {
+                color: $primary-color;
+                padding: 0px 10px 0px 2px;
+            }
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            color: #595959;
+
+            a {
+                color: $link-color;
+                white-space: nowrap;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $link-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+

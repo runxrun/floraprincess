@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: "Sarabun", sans-serif; }
+
+.bg-floraprincess {
+  background-color: #FCFBF0; }
+
+.bg-floraprincess-decor {
+  background-image: url(/application/images/decor.png);
+  background-color: #FCFBF0; }
+
+.bg-image {
+  background-color: #ffffff;
+  background-image: url("/application/images/banners/banner_2022.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover; }
+
+.fs-7 {
+  font-size: 0.9rem; }
+
+.fs-8 {
+  font-size: 0.85rem; }
+
+.fs-9 {
+  font-size: 0.8rem; }
+
+.text-title {
+  font-family: "Sriracha", sans-serif; }
+
+.text-primary {
+  color: #ec3a46 !important; }
+
+.text-secondary {
+  color: #9f4246 !important; }
+
+.bg-primary {
+  background-color: #ec3a46 !important; }
+
+.btn-primary {
+  background-color: #ec3a46 !important;
+  border-color: #ec3a46 !important; }
+
+.text-fb {
+  color: #1b74e4; }
+
+.text-line-app {
+  color: #07b53b; }
+
+/*# sourceMappingURL=custom.css.map */

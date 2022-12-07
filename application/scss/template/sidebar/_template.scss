@@ -1,0 +1,23 @@
+.rn-sidebarbox {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 15px;
+    height: 100%;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.rn-sidebarbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.rn-sidebarbox::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #020202;
+}
+
+.rn-sidebarbox::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #393939;
+}

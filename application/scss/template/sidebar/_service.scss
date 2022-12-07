@@ -1,0 +1,37 @@
+
+.sb-services {
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    ul {
+        margin: 0px;
+        padding: 10px 0px;
+        list-style: none;
+
+        li a {
+            padding: 5px 0px;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            &:hover em {
+                color: #22aeff;
+            }
+
+            i,
+            em {
+                font-style: normal;
+            }
+
+            i {
+                width: 32px;
+            }
+
+            em {
+                width: calc(100% - 32px);
+            }
+        }
+    }
+}

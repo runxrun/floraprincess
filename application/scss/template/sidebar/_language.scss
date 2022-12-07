@@ -1,0 +1,118 @@
+
+.sb-currency{
+    .currency-title {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 0px;
+        cursor: pointer;
+
+
+        em {
+            width: calc(100% - 20px);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        i {
+            width: 20px;
+            text-align: right;
+            font-size: 11px;
+            font-size: 1.1rem;
+        }
+    }
+    .currency-list {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+
+        ul {
+            margin: 0px 0px 10px 0px;
+            padding: 12px 15px;
+            list-style: none;
+
+            li {
+                +li {
+                    border-top: 1px dotted rgba(255, 255, 255, 0.2);
+                }
+
+                a {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    padding: 5px 0px;
+                    font-size: 12px;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+.sb-language {
+    .language-title {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 0px;
+        cursor: pointer;
+
+        span {
+            width: 32px;
+        }
+
+        em {
+            width: calc(100% - 52px);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        i {
+            width: 20px;
+            text-align: right;
+            font-size: 11px;
+            font-size: 1.1rem;
+        }
+    }
+
+    .language-list {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+
+        ul {
+            margin: 0px 0px 10px 0px;
+            padding: 12px 15px;
+            list-style: none;
+
+            li {
+                +li {
+                    border-top: 1px dotted rgba(255, 255, 255, 0.2);
+                }
+
+                a {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    padding: 3px 0px;
+                    cursor: pointer;
+
+                    i {
+                        width: 32px;
+                    }
+
+                    em {
+                        width: calc(100% - 32px);
+                        font-style: normal;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+}
