@@ -39,31 +39,28 @@ switch (strtolower($page_segment))
 	break;
 }
 
-include_once('array-flower-lists.php'); 
-
-
+include_once('array-flower-lists.php');
 if($flower_array=='99')
 {
 ?>
-<div class="container">
-	<div class="py-5">
-		<div class="fs-1 text-title text-primary text-center">
-			<?php echo $flower_title; ?>
-		</div>
-		<div class="fs-5 text-secondary text-center">
-			ไม่พบหน้า (<?php echo $page_segment; ?>) บน website ของเรา
-		</div>
-		<div class="py-4 text-center">
-			<a href="/" class="fs-5 text-primary">กลับหน้าแรก</a>
+	<div class="container">
+		<div class="py-5">
+			<div class="fs-1 text-title text-primary text-center">
+				<?php echo $flower_title; ?>
+			</div>
+			<div class="fs-5 text-secondary text-center">
+				ไม่พบหน้า (<?php echo $page_segment; ?>) บน website ของเรา
+			</div>
+			<div class="py-4 text-center">
+				<a href="/" class="fs-5 text-primary">กลับหน้าแรก</a>
+			</div>
 		</div>
 	</div>
-</div>
 <?php
 }
 else
 {
 ?>
-
 	<div class="bg-primary">
 		<div class="container">
 			<div class="d-block d-md-none py-3">
@@ -90,8 +87,6 @@ else
 						</button>
 					</div>
 				</div>
-
-
 				<div class="collapse" id="collapseExample">
 					<div class="mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
 						<div class="row pt-2">
@@ -134,7 +129,6 @@ else
 			</div>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="d-none d-md-block py-4">
 			<div class="pt-4 text-center fs-2 fw-bold text-title text-primary">
