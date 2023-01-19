@@ -8,7 +8,7 @@
 <body>
 
 <?php
-$dir    = '../../application/images/products/2022/teddy-bear';
+$dir    = '../../application/images/products/2022/prepare';
 $files1 = scandir($dir);
 
 print_r($files1 );
