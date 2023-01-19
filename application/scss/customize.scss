@@ -51,6 +51,42 @@ html, body {
 .fs-8 {font-size: 0.8rem;}
 .fs-9 {font-size: 0.7rem;}
 
+
+.btn-primary {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+.btn-primary {
+    &:active {
+        box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5);
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5);
+        }
+    }
+
+    &:focus-within,
+    &:target,
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5);
+    }
+}
+
+
+.btn-outline-primary {
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+}
+
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background-color: $primary-color !important;
+    color: #ffffff !important;
+}
+
+
+
 @media only screen and (max-width: 576px) {
 	.bg-screen {
 		position: absolute;

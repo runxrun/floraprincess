@@ -96,7 +96,7 @@ else
 							?>
 								<div class="py-1 col-6">
 									<a
-										href="<?php echo $value['link']; ?>"
+										href="<?php echo '/flowers/'.$value['link']; ?>"
 										class="d-flex align-items-center text-decoration-none">
 										<div class="px-2 fs-9 text-white-50"><i class="fas fa-chevron-right"></i></div>
 										<div class="ps-1 fs-7 text-white "><?php echo $value['title']; ?></div>										
@@ -117,7 +117,7 @@ else
 					?>
 					<div class="col-auto">
 						<a
-							href="<?php echo $value['link']; ?>"
+							href="<?php echo '/flowers/'.$value['link']; ?>"
 							class="text-white text-decoration-none">
 							<?php echo $value['title']; ?>
 						</a>
@@ -140,12 +140,18 @@ else
 				<?php
 				foreach (array_slice($flower_gellery, $flower_array, 1) as $key => $value)
 				{
-					foreach ($value["list"] as $key2 => $item)
+					$cutpage = count($value["list"]);
+					$currentPage = 0;
+					$itemsPerPage = 20;
+					$itemsStart = (!empty($segment[2]) ? ($segment[2]-1)*$itemsPerPage : 0);
+					$totalPage = ceil($cutpage/$itemsPerPage);
+
+					foreach (array_slice($value["list"], $itemsStart, $itemsPerPage) as $key2 => $item)
 					{
 					?>
 					<a
 						href="<?php echo $path_update.$item['image']; ?>"
-						class="col-6 col-md-4 col-lg-3">
+						class="col-6 col-md-3">
 						<div 
 							class="d-flex bg-light overflow-hidden rounded-1 h-100"
 							style="
@@ -163,6 +169,81 @@ else
 				?>
 			</div>
 		</div>
+
+
+
+		<?php
+		if($totalPage > 1)
+		{
+		?>
+		<div class="pb-4">
+			<div class="row g-2 justify-content-center">
+				<?php
+				$next_disabled = (($segment[2]>=$totalPage) ? 'disabled' : '');
+				$prev_disabled = ((empty($segment[2])||($segment[2]==1)) ? 'disabled' : '');
+				$xpage = (!empty($segment[2]) ? $segment[2]+1 : 2);
+				$zpage = (!empty($segment[2]) ? $segment[2]-1 : 1);
+				$nextpage = "/flowers/".$value['link']."/".$xpage;
+				$prevpage = "/flowers/".$value['link']."/".$zpage;
+				?>
+				<div class="col-auto">
+					<button
+						class="btn btn-outline-primary rounded-1 py-1 px-3 fs-8"
+						onclick="window.open('<?php echo $prevpage; ?>','_self');"
+						<?php echo $prev_disabled; ?>>
+						ก่อนหน้า
+					</button>
+				</div>
+				<?php
+
+				if(!empty($segment[2]))
+				{
+					$actbtn = $segment[2];
+				}
+				else
+				{
+					$actbtn = 1;
+				}
+
+				for ($ipage=1; $ipage <= $totalPage; $ipage++)
+				{ 
+					$numpage = "/flowers/".$value['link']."/".$ipage;
+
+					if($ipage==$actbtn)
+					{
+						$btnactive = "btn-primary";
+					}
+					else
+					{
+						$btnactive = "btn-outline-primary";
+					}
+					?>
+					<div class="col-auto">
+						<button 
+							class="btn <?php echo $btnactive; ?> rounded-1 py-1 px-2 fs-8"
+							onclick="window.open('<?php echo $numpage; ?>','_self');">
+							<?php echo $ipage;?>
+						</button>
+					</div>
+					<?php
+					}
+				?>
+				<div class="col-auto">
+					<button
+						class="btn btn-outline-primary rounded-1 py-1 px-3 fs-8"
+						onclick="window.open('<?php echo $nextpage; ?>','_self');"
+						<?php echo $next_disabled; ?>>
+						ถัดไป
+					</button>
+				</div>
+			</div>
+		</div>
+		<?php
+		}
+		?>
+
+
+
 	</div>
 	<script type="text/javascript" src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
 	<script type="text/javascript">

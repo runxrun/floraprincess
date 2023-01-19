@@ -1,2 +1,53 @@
-html,body{font-family:"Sarabun",sans-serif;background-color:#FCFBF0;background-image:url("/application/images/decor.png")}.text-title{font-family:"Sriracha",sans-serif}.text-primary{color:#ec3a46 !important}.bg-primary{background-color:#ec3a46 !important}.fs-7{font-size:0.9rem}.fs-8{font-size:0.8rem}.fs-9{font-size:0.7rem}@media only screen and (max-width: 576px){.bg-screen{position:absolute;background-color:rgba(255,255,255,0.7);height:100%;width:100%;top:0;left:0}}
+html, body {
+  font-family: "Sarabun", sans-serif;
+  background-color: #FCFBF0;
+  background-image: url("/application/images/decor.png"); }
+
+.text-title {
+  font-family: "Sriracha", sans-serif; }
+
+.text-primary {
+  color: #ec3a46 !important; }
+
+.bg-primary {
+  background-color: #ec3a46 !important; }
+
+.fs-7 {
+  font-size: 0.9rem; }
+
+.fs-8 {
+  font-size: 0.8rem; }
+
+.fs-9 {
+  font-size: 0.7rem; }
+
+.btn-primary {
+  background-color: #ec3a46 !important;
+  border-color: #ec3a46 !important; }
+
+.btn-primary:active {
+  box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5); }
+  .btn-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5); }
+.btn-primary:focus-within, .btn-primary:target, .btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(236, 58, 70, 0.5); }
+
+.btn-outline-primary {
+  border-color: #ec3a46 !important;
+  color: #ec3a46 !important; }
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  background-color: #ec3a46 !important;
+  color: #ffffff !important; }
+
+@media only screen and (max-width: 576px) {
+  .bg-screen {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; } }
+
 /*# sourceMappingURL=customize.css.map */
