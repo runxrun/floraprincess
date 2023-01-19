@@ -84,11 +84,6 @@ $flower_gellery = array(
             array('image' => 'bouquet/262954.jpg',),
             array('image' => 'bouquet/262957.jpg',),
             array('image' => 'bouquet/260356.jpg',),
-
-
-
-
-
 		),
 	),
 	array(
@@ -170,7 +165,6 @@ $flower_gellery = array(
 			array('image'=>'decoration/360586.jpg',),
 		),
 	),
-
 	array(
 		"title" => "Teddy Bear", //Flower Box
 		"link" => "teddy-bear", 
@@ -189,7 +183,7 @@ $flower_gellery = array(
 			array('image'=>'teddy-bear/360599.jpg',),
 			array('image'=>'teddy-bear/360603.jpg',),
 		),
-	),        	
+	),
 	array(
 		"title" => "กระเช้าผลไม้", //
 		"link" => "fruit-basket", 
