@@ -1,5 +1,12 @@
+<?php
 
 
+$current_date = time();
+$expiry_date = strtotime("2023-02-15");
+
+if ($current_date > $expiry_date)
+{
+?>
 <div
 	class="position-relative"
 	style="
@@ -30,6 +37,51 @@
 		</div>
 	</div>
 </div>
+<?php
+}
+else
+{
+?>
+<div
+	class="position-relative"
+	style="
+		background-image: url('/application/images/banners/hearts-3972327_1920.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	">
+	<div class="container py-4">
+		<div class="py-4 w-100 h-100">
+			<div class="d-flex justify-content-center align-items-center h-100">			
+				<div class="col-12 col-lg-9 text-center">
+					<div class="pt-4 pb-2 h1 text-title text-primary fw-bold">
+						ดอกไม้สำหรับวันวาเลนไทน์
+					</div>
+					<div class="py-4">
+						<a href="/valentine-promotion" class="d-flex">
+							<img
+								src="/application/images/products/2023/valentines/banner-valentines.png"
+								class="border-0 w-100">
+						</a>
+					</div>
+					<div class="py-2 fs-4 text-title text-primary">
+						<div>จองได้ทาง LINE : @floraprincess</div>
+						<div>หรือทาง Facebook : Flora Princess</div>
+					</div>
+					<div class="py-4 fs-4 text-title text-primary">
+						<a href="/valentine-promotion" class="btn btn-primary fs-5 py-2 px-5">
+							ดูรายละเอียด
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php
+}
+?>
+
 
 
 <div class="container py-5">

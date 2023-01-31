@@ -29,9 +29,14 @@ switch (strtoupper($segment[0]))
 	case 'VALENTINE-PROMOTION':
 		$title = 'Valentine Promotion - ร้านดอกไม้ฟลอร่า ปริ๊นเซส';
 		$page_file = 'valentinepromotion_page.php';
+		$light_gallery = '
+			<link rel="stylesheet" href="/application/scripts/light-gallery/package/dist/css/lightgallery.css">
+			<script src="/application/scripts/light-gallery/package/dist/js/lightgallery.min.js"></script>
+		';
 		break;	
 	default:
 		$page_file = '404_page.php';
 		break;
 }
 ?>
+
