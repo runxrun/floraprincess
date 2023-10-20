@@ -1,10 +1,10 @@
 
-<div class="bg-white">	
+<div class="bg-white">
 	<div class="container">
 		<div class="row justify-content-between align-items-center">
 			<div class="col-auto">
 				<a href="/" class="d-flex py-3">
-					<img src="/application/images/logo-floraprincess-mb.svg" alt="Flora Princess">
+					<img src="/application/images/flora-princess.png" alt="Flora Princess">
 				</a>
 			</div>
 			<div class="col-auto d-block d-md-none">
@@ -22,7 +22,7 @@
 				<div class="py-3">
 					<div class="row">
 						<div class="col-auto">
-							<a 
+							<a
 								href="https://www.facebook.com/FloraPrincessbkk/"
 								class="d-flex text-decoration-none"
 								style="color: #3e568f;"
@@ -32,7 +32,7 @@
 							</a>
 						</div>
 						<div class="col-auto">
-							<a 
+							<a
 								href="http://line.me/ti/p/~@floraprincess"
 								class="d-flex text-decoration-none"
 								style="color: #39ae41;"
