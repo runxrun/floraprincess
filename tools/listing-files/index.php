@@ -8,12 +8,12 @@
 <body>
 
 <?php
-$dir    = '../../application/images/products/2022/prepare';
+$dir    = '../../application/images/products/2023/bouquet';
 $files1 = scandir($dir);
 
 print_r($files1 );
 /*
-$sql = "INSERT INTO imgnews (Seq, CodeNews, ImgName, Ext, AltImg, TitleImg, imgwidth, imgheight, Flag) VALUES "; 
+$sql = "INSERT INTO imgnews (Seq, CodeNews, ImgName, Ext, AltImg, TitleImg, imgwidth, imgheight, Flag) VALUES ";
 
 $seq = 26;
 
@@ -22,7 +22,7 @@ foreach ($files1 as $key => $value)
 
 	if(($value!='.') && ($value!='..'))
 	{
-		
+
 		$seq++;
 		$imagename = substr($value,0,-4);
 		$sql .= "
@@ -43,11 +43,11 @@ function rename
 
 foreach ($files1 as $key => $value)
 {
-//echo $value;	
+//echo $value;
 if(($value!='.') && ($value!='..'))
 {
 	//echo $value.'<br>';
-	
+
 	$value_replace_name = str_replace(' ','_',$value);
 	$value_name = str_replace(',','',$value_replace_name);
 
